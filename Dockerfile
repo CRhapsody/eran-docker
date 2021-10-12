@@ -23,9 +23,9 @@ RUN wget -nv https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.
 ENV PATH="/root/miniconda3/bin:$PATH"
 
 # clone ERAN repository
-RUN git clone https://github.com/eth-sri/ERAN.git
+RUN git clone https://hub.fastgit.org/CRhapsody/eran.git
 
-WORKDIR /ERAN
+WORKDIR /eran
 
 # install ERAN
 RUN bash ./install.sh
@@ -33,4 +33,4 @@ RUN bash ./install.sh
 # install python dependencies
 RUN pip install -r requirements.txt
 
-WORKDIR /ERAN/tf_verify
+WORKDIR /eran/tf_verify
