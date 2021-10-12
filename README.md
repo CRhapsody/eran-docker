@@ -1,4 +1,4 @@
-# ERAN Docker
+# It is a copy from ERAN Docker(author t-lorenz)
 
 Dockerfile for building images of the [ETH Robustness Analyzer](https://github.com/eth-sri/eran) with all required dependencies.
 
